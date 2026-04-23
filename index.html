@@ -34,6 +34,13 @@
         Dos(document.getElementById("dos-container"), {
             url: "./FlyingSB.zip",
             background: "#000000",
+            dosboxConf: `
+[autoexec]
+echo off
+mount c .
+c:
+FlyingSB.exe
+`,
         });
     </script>
 </body>
