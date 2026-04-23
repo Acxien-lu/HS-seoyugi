@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>날아라 슈퍼보드 - 환상서유기</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: '맑은 고딕', sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #ffcc00;
+        }
+        #dos-container {
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎮 날아라 슈퍼보드 - 환상서유기</h1>
+    <div id="dos-container"></div>
+    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+    <script>
+        Dos(document.getElementById("dos-container"), {
+            url: "./FlyingSB.zip",
+            background: "#000000",
+        });
+    </script>
+</body>
+</html>
